@@ -1,0 +1,9 @@
+services:
+  hexwrath:
+    build: .
+    working_dir: /app
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app           # Mount the project directory to the container
+    command: ["air"]
